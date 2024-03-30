@@ -1,0 +1,17 @@
+.food_display{
+    width: 80vw;
+    margin-left:8vw;
+    margin-top:30px;
+}
+
+.food_display{
+    font-size:max(2vw,24px);
+    font-weight: 600;
+}
+
+.food_display_list{
+    margin-top: 3vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(255px,0.5fr));
+    gap:3vw;
+}

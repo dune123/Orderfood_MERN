@@ -1,0 +1,49 @@
+.exploremenu{
+    display: flex;
+    flex-direction: column;
+    gap:3vh;
+    margin-top:2.5vh;
+    width:85vw;
+    margin-left: 8vw;
+}
+
+.exploremenu h1{
+    color: #262626;
+    font-weight: 500;
+}
+
+.exploremenu p{
+    max-width: 60%;
+    color: #808080;
+}
+
+.exploremenu_list{
+    display: flex;
+    gap: 1.6vw;
+}
+
+.exploremenu .explore_menu_list_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1vw;
+    margin-top: 3vh;
+}
+
+.explore_menu_list_item img{
+    cursor: pointer;
+}
+
+.explore_menu_list_item p{
+    margin-top: 1vh;
+    color: #747474;
+    font-size: max(1.4vw,16px);
+    cursor: pointer;
+}
+
+.ex hr{
+    margin:1vh 0px;
+    height:2px;
+    color: #e2e2e2;
+    border: none;
+}

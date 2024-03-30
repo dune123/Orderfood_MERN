@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height:15vh;
+    font-family: Outfit;
+}
+
+.navbar_menu{
+    display: flex;
+    list-style: none;
+    gap:1vw;
+    margin-left:10vw;
+    margin-right: 10vw;
+    color:#49557e;
+    cursor: pointer;
+
+}
+
+.navbar .logo{
+    width:150px;
+}
+
+.navbar .navbar_right{
+    display: flex;
+    gap:2vw;
+}
+
+.navbar_right .navbar_search_icon{
+    display: flex;
+    gap:1.5vw;
+}
+
+.navbar_search_icon button{
+    width:5vw;
+    border-radius: 17px;
+    padding: 1vh;
+    background: transparent;
+    color: #49557e;
+    border:1px solid tomato;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navbar_search_icon button:hover{
+    background-color: #fff4f2;
+}
+
+.active{
+    padding-bottom: 0.2vh;
+    border-bottom: 2px solid #49557e;
+}
+
+.navbar_search_icon{
+    position: relative;
+}
+
+.navbar_search_icon .dot{
+    position: absolute;
+    min-width: 10px;
+    min-height: 10px;
+    background-color: tomato;
+    border-radius: 5px;
+    top:-8px;
+    right:6vw
+}
