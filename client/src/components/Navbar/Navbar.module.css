@@ -66,3 +66,44 @@
     top:-8px;
     right:6vw
 }
+
+@media (max-width:900px){
+    .navbar .logo{
+        width:140px
+    }
+
+    .navbar_right {
+        display: flex;
+        gap:10px;
+        align-items: center;
+    }
+
+    .navbar_right .navbar_search_icon{
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar_right button{
+        width:60px;
+    }
+
+    .navbar_right .dot{
+        position: absolute;
+        min-width: 10px;
+        min-height: 10px;
+        background-color: tomato;
+        border-radius: 5px;
+        top:-3px;
+        right:9vw
+    }
+}
+
+@media (max-width:750px){
+    .navbar_menu{
+        display: none;
+    }
+    .navbar_right .dot{
+        right:13vw;
+        top:-1px;
+    }
+}

@@ -24,6 +24,10 @@
     cursor: pointer;
 }
 
+.footer_content_right ul{
+    list-style: none;
+}
+
 .footer_content_center ul{
     list-style: none;
     display: flex;

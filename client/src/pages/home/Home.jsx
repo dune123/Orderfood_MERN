@@ -3,20 +3,20 @@ import styles from "./Home.module.css"
 import Header from '../../components/Header/Header'
 import Navbar from '../../components/Navbar/Navbar'
 import ExploreMenu from '../../components/ExploreMenu/ExploreMenu'
-import { useActionData } from 'react-router-dom'
+import LoginPop from '../../components/LoginPop/LoginPop'
 import FoodDisplay from '../../components/FoodDisplay/FoodDisplay'
 import Footer from '../../components/Footer/Footer'
+import AppDownload from '../../AppDownload/AppDownload'
 
 
 const Home = () => {
   const [category,setCategory]=useState("All")
   return (
     <div>
-        <Navbar/>
         <Header/>
         <ExploreMenu category={category} setCategory={setCategory}/>
         <FoodDisplay category={category}/>
-        <Footer/>
+        <AppDownload/>
     </div>
   )
 }

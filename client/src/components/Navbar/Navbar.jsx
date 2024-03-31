@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import styles from "./Navbar.module.css"
 import {assets} from "../../assets/assets"
+import { Link } from 'react-router-dom'
 
-const Navbar = () => {
+const Navbar = ({setshowlogin}) => {
     const [menu,setMenu]=useState("home")
 
     const selecteddiv=document.getElementsByClassName("active")
@@ -19,11 +20,8 @@ const Navbar = () => {
         <div className={styles.navbar_right}>
             <img src={assets.search_icon} style={{cursor:"pointer"}}/>
             <div className={styles.navbar_search_icon}>
-                <img src={assets.basket_icon} alt="" style={{cursor:"pointer"}}/>
-                <div className={styles.dot}>
-
-                </div>
-                <button>Sign In</button>
+                <Link to="/cart"><img src={assets.basket_icon} alt="" style={{cursor:"pointer"}}/></Link>
+                <button onClick={()=>setshowlogin(true)}>Sign In</button>
             </div>
         </div>
     </div>

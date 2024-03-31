@@ -60,3 +60,27 @@
     font-size:max(1vw,13px);
     cursor: pointer;
 }
+
+@media (max-width:1050px){
+    .Header{
+        height:38vw;
+    }
+    .header_contents{
+        max-width: 45%;
+    }
+}
+@media (max-width:750px){
+    .header_contents{
+        max-width: 55%;
+    }
+    .header_contents p{
+        display: none;
+    }
+    .header_contents button{
+        padding:2vw 4vw;
+    }
+}
+
+
+
+
